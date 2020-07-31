@@ -1,0 +1,17 @@
+name: Update gist with Discord Bot Stats
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: "0 0 * * * "
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Update gist
+        uses: Milo123459/gist-meme@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: 35d41ac583a1d61f96531147a54471ea
+          SUBREDDIT: meme

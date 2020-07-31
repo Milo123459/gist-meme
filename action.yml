@@ -1,0 +1,8 @@
+name: "gist-meme"
+description: "Every day update a pinned gist to contain a meme from a subreddit."
+branding:
+  icon: "clipboard"
+  color: "blue"
+runs:
+  using: "node12"
+  main: "index.js"
