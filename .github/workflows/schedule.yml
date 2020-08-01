@@ -2,7 +2,7 @@ name: Update gist with Discord Bot Stats
 on:
   schedule:
     - cron: "0 0 * * * "
-  pull:
+  push:
     branches: [ master ]
 jobs:
   update:
